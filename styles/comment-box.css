@@ -1,0 +1,40 @@
+section.comment-box {
+    background-color: lightsalmon;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.comment {
+    width: 30vw;
+    border: 1px solid grey;
+    padding: 1rem;
+    box-shadow: 2px 2px 20px 1px black;
+    background-color: white;
+    margin-left: calc(attr(data-indentation number) * 5px);
+}
+
+.comment .username {
+    font-weight: 800;
+}
+
+.comment .content {
+    padding-block: 1em;
+}
+
+.comment .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.comment button {
+    background-color: lightseagreen;
+    border: 1px solid black;
+    border-radius: 0.2em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.comment button:hover {
+    background-color: rgb(27, 146, 140);
+}

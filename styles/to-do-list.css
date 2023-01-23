@@ -1,0 +1,29 @@
+section.to-do-list {
+    flex-direction: column;
+}
+
+section.to-do-list input {
+    padding: 0.5em;
+    font-size: 1rem;
+}
+
+section.to-do-list div.items {
+    margin-block: 2em;
+}
+
+section.to-do-list div.item {
+    margin-bottom: 1em;
+}
+
+section.to-do-list button.delete,
+section.to-do-list button.edit {
+    border: none;
+    background-color: transparent;
+    padding: 0.3em;
+    cursor: pointer;
+}
+
+section.to-do-list span,
+section.to-do-list button.edit {
+    margin-right: 1em;
+}

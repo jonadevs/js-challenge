@@ -1,0 +1,50 @@
+:root {
+    --background-color: #222937;
+}
+
+section.stopwatch {
+    background-color: var(--background-color);
+    flex-direction: column;
+}
+
+section.stopwatch button {
+    background-color: rgb(80, 164, 197);
+    color: white;
+    padding-block: 0.6em;
+    padding-inline: 1.5em;
+    border: none;
+    border-radius: 4rem;
+    font-size: 2rem;
+    box-shadow: #0d0f14 2px 2px 10px 1px;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+
+section.stopwatch button:disabled {
+    background-color: grey;
+    color: lightgrey;
+    cursor: default;
+}
+
+section.stopwatch button:hover:not(:disabled) {
+    transform: translateY(-5px);
+    box-shadow: #0d0f14 2px 7px 15px 1px;
+}
+
+section.stopwatch button:focus-within {
+    transform: translateY(0px);
+}
+
+section.stopwatch div.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+section.stopwatch div.time {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bolder;
+    font-size: 10rem;
+    color: white;
+    margin-bottom: 0.7em;
+}

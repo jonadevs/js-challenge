@@ -1,0 +1,75 @@
+:root {
+    --color-selected: rgb(254, 242, 71);
+    --color-hovered: rgb(253, 248, 177);
+}
+
+section.star-rating {
+    background-color: lightskyblue;
+}
+
+.star-display {
+    height: 100px;
+    aspect-ratio: 1;
+    display: inline-block;
+    border-radius: 50%;
+    pointer-events: none;
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
+.star {
+    cursor: pointer;
+}
+
+/* star click states */
+
+section.star-rating[data-rating="1"] .star:nth-child(-n + 1) .star-display {
+    background-color: var(--color-selected);
+}
+
+section.star-rating[data-rating="2"] .star:nth-child(-n + 2) .star-display {
+    background-color: var(--color-selected);
+}
+
+section.star-rating[data-rating="3"] .star:nth-child(-n + 3) .star-display {
+    background-color: var(--color-selected);
+}
+
+section.star-rating[data-rating="4"] .star:nth-child(-n + 4) .star-display {
+    background-color: var(--color-selected);
+}
+
+section.star-rating[data-rating="5"] .star:nth-child(-n + 5) .star-display {
+    background-color: var(--color-selected);
+}
+
+/* star hover states */
+
+section.star-rating[data-hover="1"]
+    .star:nth-child(-n + 1):not(.selected)
+    .star-display {
+    background-color: var(--color-hovered);
+}
+
+section.star-rating[data-hover="2"]
+    .star:nth-child(-n + 2):not(.selected)
+    .star-display {
+    background-color: var(--color-hovered);
+}
+
+section.star-rating[data-hover="3"]
+    .star:nth-child(-n + 3):not(.selected)
+    .star-display {
+    background-color: var(--color-hovered);
+}
+
+section.star-rating[data-hover="4"]
+    .star:nth-child(-n + 4):not(.selected)
+    .star-display {
+    background-color: var(--color-hovered);
+}
+
+section.star-rating[data-hover="5"]
+    .star:nth-child(-n + 5):not(.selected)
+    .star-display {
+    background-color: var(--color-hovered);
+}

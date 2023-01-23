@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Interview Challenge</title>
+        <link type="image/png" sizes="16x16" rel="icon" href="" />
+        <link
+            type="image/png"
+            sizes="16x16"
+            rel="icon"
+            href="assets/favicon/favicon16.png"
+        />
+        <link
+            type="image/png"
+            sizes="32x32"
+            rel="icon"
+            href="assets/favicon/favicon32.png"
+        />
+        <link
+            type="image/png"
+            sizes="96x96"
+            rel="icon"
+            href="assets/favicon/favicon96.png"
+        />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/star-rating.css" />
+        <link rel="stylesheet" href="styles/comment-box.css" />
+        <link rel="stylesheet" href="styles/stopwatch.css" />
+        <link rel="stylesheet" href="styles/to-do-list.css" />
+        <script src="scripts/star-rating.js" defer></script>
+        <script src="scripts/comment-box.js" defer></script>
+        <script src="scripts/stopwatch.js" defer></script>
+        <script src="scripts/to-do-list.js" defer></script>
+    </head>
+    <body>
+        <section
+            class="star-rating"
+            data-title="star rating"
+            data-rating="0"
+            data-hover="0"
+        >
+            <div class="star" data-star-number="1">
+                <div class="star-display"></div>
+            </div>
+            <div class="star" data-star-number="2">
+                <div class="star-display"></div>
+            </div>
+            <div class="star" data-star-number="3">
+                <div class="star-display"></div>
+            </div>
+            <div class="star" data-star-number="4">
+                <div class="star-display"></div>
+            </div>
+            <div class="star" data-star-number="5">
+                <div class="star-display"></div>
+            </div>
+        </section>
+        <section class="comment-box" data-title="comment box"></section>
+        <section class="stopwatch dark-mode" data-title="stopwatch">
+            <div class="time">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+            <div class="buttons">
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </section>
+        <section class="to-do-list" data-title="to do list">
+            <form onsubmit="onSubmit(); return false;">
+                <input id="item-input" type="text" placeholder="item" />
+            </form>
+            <div class="items" id="item-container"></div>
+        </section>
+    </body>
+</html>
